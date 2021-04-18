@@ -33,7 +33,6 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 import Dashboard from "./dashboard";
 import Production from "./production_list_component";
-import CreatUser from "./create_user_component";
 
 const drawerWidth = 240;
 
@@ -206,7 +205,6 @@ export default function PersistentDrawerLeft() {
         <Switch>
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/production" component={Production} />
-          <Route path="/createuser" component={CreatUser} />
         </Switch>
       </main>
     </div>
