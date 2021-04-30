@@ -157,7 +157,7 @@ export default function ProductListComponent() {
 
   const handleRowDelete = (oldData, resolve) => {
     axios
-      .delete("http://localhost:5000/production/" + oldData._id)
+      .delete("http://localhost:5000/productions/" + oldData._id)
       .then((res) => {
         const dataDelete = [...data]; //Spead Operator,for spead Iterable array or string.
         const index = oldData.tableData.id;
